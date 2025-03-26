@@ -1,0 +1,13 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-image:url(pic.jpg);
+  background-color: #cccccc;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-position: 100px 200px;
+}
+
+h1{
+  background-color: yellowgreen;
+
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>div layouts</title>
+  <style>
+    body{
+      margin: 0px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .header{
+      padding: 10px;
+      background-color:#455e64;
+      text-align: center;
+    }
+    .header h2{
+      color: black;
+    }
+    /* ===============[nav css]============== */
+    .nav{
+      background-color: #243238;
+      padding: 5px;
+    }
+    nav li{
+      list-style: none;
+      display: inline-block;
+      padding: 8px;
+    }
+    .nav a{
+      text-decoration: none;
+      color: #fff;
+    }
+    .nav ul li a:hover{
+      text-decoration: none;
+      color:#7fffd4;
+    }
+    .lside{
+      float: left;
+      width: 80%;
+      min-height: 440px;
+      background-color: #f0f8ff;
+      text-align: center;
+    }
+    .rside{
+      text-align: center;
+      float: right;
+      width: 20%;
+      min-height: 440px;
+      background-color: #c1cdcd;
+    }
+    .footer{
+      height:44px;
+      background-color: #455e64;
+      text-align: center;
+      padding-top: 10px;
+    }
+    .p{
+      color: #8fbc8f;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <!-- HEADER -->
+  <div class="header">
+    <h2>Div header</h2>
+  </div>
+  <!-- NAVIGATION BAR -->
+  <div class="nav">
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">MENU</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">CONTACT</a></li>
+      <li style="float: right;"><a href="#">LOGIN</a></li>
+      <li style="float: right;"><a href="#">SIGN UP</a></li>
+    </ul>
+  </div>
+  <!-- MAIN PAGE -->
+   <div class="lside">
+    <p>write your comment here</p>
+   </div>
+   <div class="rside">
+    <p>this is side</p>
+   </div>
+   <!-- footer -->
+    <div class="footer">
+      <p>Copyrigth blablabllaaa.com</p>
+    </div>
+  </div>
+  
+
+</body>
+</html>

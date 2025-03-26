@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="30; url=index.html">
+  <title>form page</title>
+</head>
+<body>
+  <h3> This is a basic form</h3>
+  <form>
+    Enter your name <br>
+    <input type="text" name="username">
+  </form><br>
+
+  <form>
+    Firstname: <input type="text" name="Firstname"><br>
+    lastname: <input type="text" name="lastname"><br>
+    <textarea rows="2" cols="20"></textarea>
+  </form>
+  <h3>trying out labels</h3>
+  <form action="">
+    <label for="Firstname">Firstname:</label><br>
+    <input type="text" name="Firstname" id="Firstname"><br>
+    <label for="Firstname">lastname:</label><br>
+    <input type="text" name="lastname" id="lastname"><br>
+  </form>
+  <h3>for passwords</h3>
+  <label for="passwords">password:</label><br>
+    <input type="password" name="password" id="password"><br>
+  <h3>for emails</h3>
+  <label for="email">email:</label><br>
+    <input type="email" name="email" id="email"><br>
+  <h3>for radios </h3>
+  <label for="gender">gender:</label><br>
+    <input type="radio" name="gender" id="gender" value="male">male
+    <input type="radio" name="gender" id="gender" value="female">female<br>
+  <h3>check boxes</h3>
+  <form >Hobby: <br>
+    <input type="checkbox" name="cricket" id="cricket" value="cricket">
+    <label for="cricket">cricket</label> <br>
+    <input type="checkbox" name="football" id="football" value="football">
+    <label for="football">football</label> <br>
+    <input type="checkbox" id="hockey" value="hockey" name="hockey">
+    <label for="hockey">hockey</label> <br>
+  </form>
+  <h3>a form</h3>
+  <form action="">
+    <label for="name">Enter username</label> <br>
+    <input type="text" name="name" id="name"> <br>
+    <label for="password"> Enter password</label> <br>
+    <input type="password" name="password" id="password"> <br>
+    <input type="submit" value="submit">
+    <input type="reset" value="reset">
+  </form>
+  <h3>button with small js</h3>
+  <form action="">
+    <input type="button" value="click me" onclick="alert('im learning html')">
+  </form>
+  <h3>for selecting files</h3>
+  <input type="file" name="new file" >
+  <input type="submit" value="submit">
+  <h3>for date</h3>
+  <form action="">
+    <label for="date">
+      select the meeting schedule: <br><br>
+      select date and time <input type="datetime-local" name="meetingdate" >
+    </label>
+  </form>
+  <h3>month</h3>
+  <form action="">
+    <label for="birth month">Enter birth mount</label>
+    <input type="month" name="newmonth">
+    <input type="submit" value="submit">
+  </form>
+  <h3>numbers</h3>
+  <form action="">
+    <label for="age">Enter an age</label><br>
+    <input type="number" name="age" min="18" max="65">
+    <input type="submit" value="submit">
+  </form>
+  <h3>for urls</h3>
+  <form action="">
+    <label for="urls"> Enter a url:</label><br>
+    <input type="url" name="website" placeholder="http://example.com">
+    <input type="submit" value="submit" >
+  </form>
+  <h3>search </h3>
+  <form action="">
+    <input type="search" name="q" >
+    <input type="submit" value="submit">
+  </form>
+  <h3>tel</h3>
+  <form action="">
+    <input type="tel" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+    <input type="submit" value="submit">
+  </form>
+</body>
+</html>

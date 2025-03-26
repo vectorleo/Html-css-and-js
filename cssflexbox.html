@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flexbox examples</title>
+  <style>
+    div.flex-container{
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
+      text-align: center;
+    }
+    .flex-container{
+      padding: 15px;
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
+      text-align: center;
+    }
+    .flex-container >* {
+      padding: 15px;
+      -webkit-flex: 1 100%;
+      flex: 1 100%;
+    }
+    .article{
+      text-align: left;
+    }
+    header, footer{background:#000080; color:white}
+    .nav ul{
+      list-style: none;
+      padding:0;
+    }
+    nav ul a{
+      text-decoration: none;
+    }
+    @media all and (min-width:768px){
+      .nav{text-align: left;-webkit-flex: 1 auto; flex:1 auto; -webkit-order:1; order:1;}
+      .article{-webkit-flex:5 0px; flex: 5 0px;-webkit-order:2;order: 2;}
+      footer{-webkit-order:3; order: 3;}
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <header>Toturials Gallery</header>
+      <nav class="nav">
+    <ul>
+      <li><a href="#">link1</a></li>
+      <li><a href="#">link2</a></li>
+      <li><a href="#">link3</a></li>
+    </ul>
+  </nav>
+  <article class="article">
+    <h1>HTML</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, accusantium. 
+      Quaerat nam eius necessitatibus provident reiciendis ex minus! Numquam eaque incidunt 
+      illum assumenda quos aut est? Accusamus in voluptatem porro.</p>
+    <p>HTML stand for hyper text markup language</p>
+  </article>
+  <footer>
+    Copyrigth Toturials Gallery.com
+  </footer>
+  </div>
+
+</body>
+</html>
+</html>
