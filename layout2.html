@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    body{
+      font-family: Arial;
+      background-color: rgb(214, 214, 214);
+      margin: 0;
+    }
+    .header{
+      text-align: center;
+      padding:20px;
+      background-color: white;
+    }
+    .nav{
+      background-color: rgb(33, 33, 33);
+      overflow: hidden;
+      position: sticky;
+      top:0;
+    }
+    .nav a{
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 15px;
+      float: right;
+      padding: 15px;
+    }
+    .nav a:hover{
+      background-color: rgb(227, 227, 227);
+      color: rgb(12, 12, 12);
+    }
+    .row{
+      margin:5px;
+    }
+    .row::after{
+      content:"";
+      clear: both;
+      display: table;
+    }
+    .leftcolumn{
+      float: left;
+      width: 75%;
+    }
+    .rigthcolumn{
+      float: right;
+      width: 25%;
+    }
+    .card{
+      background-color: white;
+      padding: 20px;
+      margin: 20px;
+    }
+    .fake-img{
+      background-color: gray;
+      padding:20px;
+      width: 100%;
+    }
+    .footer{
+      text-align: center;
+      color: white;
+      background-color: rgb(24, 24, 24);
+      padding: 30px;
+      width: 100%;
+    }
+    @media screen and (max-width:800px) {
+      .leftcolumn , .rigthcolumn{
+        float: none;
+        width: 100%;
+      }
+
+    }
+
+    @media screen and (max-width:400px) {
+      .nav a{
+        float: none;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="header">
+    <h1>Welcome to Kite</h1>
+    <p>a fun place to learn.</p>
+  </div>
+  <div class="nav">
+    <a href="" style="float: left; "><b>Logo</b></a>
+    <a href="">Store</a>
+    <a href="#about">About us</a>
+    <a href="">Home</a>
+  </div>
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>Title Header</h2>
+        <h6>Title Discription, May 21 2025</h6>
+        <div class="fake-img">
+          <p>image</p>
+        </div>
+        <p>Some text.....</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Aliquid reiciendis nesciunt, pariatur corporis, earum provident
+            porro molestiae ipsum voluptas cumque sit qui dolores consequatur
+            , nostrum reprehenderit delectus! Debitis, ullam deleniti.
+        </p>
+      </div>
+      <div class="card">
+        <h2>Title Header</h2>
+        <h6>Title Discription, May 21 2025</h6>
+        <div class="fake-img">
+          <p>image</p>
+        </div>
+        <p>Some text.....</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Aliquid reiciendis nesciunt, pariatur corporis, earum provident
+            porro molestiae ipsum voluptas cumque sit qui dolores consequatur
+            , nostrum reprehenderit delectus! Debitis, ullam deleniti.
+        </p>
+      </div>
+    </div>
+    <div class="rigthcolumn">
+      <div class="card">
+        <h1 id="about">About me</h1>
+        <div class="fake-img">
+          image..
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Sapiente cupiditate iusto architecto, harum alias sequi et
+            vero rem modi deserunt nobis ea,
+           reprehenderit, nesciunt nam provident unde a nemo fugit.</p>
+      </div>
+      <div class="card">
+        <h2>Popular post</h2>
+        <div class="fake-img"> image</div>
+        <div class="fake-img"> image</div>
+        <div class="fake-img"> image</div>
+      </div>
+      <div class="card">
+        <h1>Follow me</h1>
+        <p>some text..</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Kite is the Best</p>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    input[type=text],select{
+      width: 100%;
+      display: inline-block;
+      padding: 12px 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin: 8px 0px;
+      box-sizing:border-box;
+    }
+    input[type=submit] {
+      width: 100%;
+      padding: 14px 20px;
+      background-color: aquamarine;
+      cursor: pointer;
+      border:none ;
+      border-radius: 8px;
+    }
+    input[type=submit]:hover {
+      background-color: rgb(70, 138, 138);
+    }
+    .content{
+      border-radius: 5px;
+      background-color: aliceblue;
+      padding: 20px;
+      width: 60%;
+    }
+    textarea{
+      width: 100%;
+      box-sizing: border-box;
+      height: 150px;
+      border:1px solid #ccc;
+      resize: none;
+      border-radius:8px;
+      padding: 12px 14px;
+      background-color: white;
+    }
+    textarea:focus{
+      text-emphasis: none;
+    }
+  </style>
+</head>
+<body>
+  <H1>this is styling html forms</H1>
+  <div class="content">
+    <form action="">
+    <label for="fname">First name</label>
+    <input type="text" id="fname" name="First name" placeholder="Name..">
+    <label for="text">Last name</label>
+    <input type="text" id="lname" name="last name" placeholder="your Last name..">
+    <label for="text">country</label>
+    <select name="country" id="country">
+      <option value="nigeria">Nigeria</option>
+      <option value="togo">Togo</option>
+      <option value="ghana">ghana</option>
+    </select>
+    <textarea> leave a comment..</textarea>
+    <input type="submit" value="Done">
+
+  </form>
+  </div>
+  
+</body>
+</html>
