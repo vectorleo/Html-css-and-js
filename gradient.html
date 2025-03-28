@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(215, 215, 215);
+    }
+    .card{
+      text-align: left;
+      background-color: white;
+      width: 25%;
+      padding: 20px;
+      border-radius: 30px;
+      align-items: center;
+      box-shadow: 10px 10px 5px 12px rgba(89, 87, 87, 0.021);
+    }
+    .gradient{
+      background-image:linear-gradient(to bottom right,rgb(255, 43, 230),rgb(221, 1, 255));
+      padding: 70px;
+      border-radius: 15px;
+    }
+    button{
+      width: 100%;
+      padding: 15px 30px;
+      border: none;
+      background-color:rgb(221, 1, 255);
+      border-radius: 15px;
+    }
+    p.test1{
+      border: 2px solid black;
+      width: 200px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: clip;
+    }
+    p.test2{
+      border: 2px solid black;
+      width: 200px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    p.test2:hover{
+      white-space: inherit;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>The Card Header</h2>
+    <div class="gradient"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat,
+       numquam odit maxime accusamus corrupti eligendi quo nihil vel,
+       a, tempora tenetur in explicabo cumque labore molestias animi. Eligendi, cumque repellat.
+      </p>
+    <button> learn more😁</button>
+  </div>
+  <div>
+    <p class="test1">this is some random text say somthing important</p>
+    <p class="test2">this is some random text say somthing important</p>
+    <p class="test3">this is some random text say somthing important</p>
+    <p class="test4">this is some random text say somthing important</p>
+  </div>
+</body>
+</html>
